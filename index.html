@@ -20,7 +20,7 @@
       animation: body_wfepdeodfpewkopfeofakdsjaia 30s infinite;
       user-select: none;
       font-family: "Comic Sans MS", "Comic Sans", cursive;
-      background: linear-gradient(to right, #00c6fb, #005bea);
+      background: linear-gradient(to right, #00ff69, #ff0000);
       pointer-events: none;
     }
 
@@ -37,22 +37,22 @@
 
     @keyframes body_wfepdeodfpewkopfeofakdsjaia {
       0% {
-        transform: rotateX(0deg) rotateY(0deg) skewX(10deg) scale(20%);
+        transform: rotateX(0deg) rotateY(0deg) skewX(9deg) scale(20%);
         color: red;
       }
 
       50% {
-        transform: rotateX(40deg) rotateY(10deg) skewX(0deg) scale(101%);
+        transform: rotateX(40deg) rotateY(10deg) skewX(28deg) scale(101%);
         color: cyan;
       }
 
       90% {
-        transform: rotateX(80deg) rotateY(40deg) skewX(10deg) scale(20%);
+        transform: rotateX(80deg) rotateY(40deg) skewX(42deg) scale(20%);
         color: blue;
       }
 
       100% {
-        transform: rotateX(0deg) rotateY(0deg) skewX(10deg) scale(20%);
+        transform: rotateX(0deg) rotateY(0deg) skewX(93deg) scale(20%);
         color: red;
       }
 
@@ -73,15 +73,14 @@
     }
 
     @keyframes wfepdeodfpewkopfeofakdsjaia {
-      from {
-        transform: translateX(120%) translateY(120%);
+      0% {
+        transform: translateX(-120%) translateY(-120%) rotateZ(0);
         transform: skewY(360deg) scale(0%);
         position: absolute;
         text-shadow: 5px 5px 5px red;
       }
-
-      to {
-        transform: translateX(-120%) translateY(-120%);
+      100% {
+        transform: translateX(-120%) translateY(-120%) rotateZ(0);
         transform: skewY(-360deg) scale(100%);
         position: absolute;
         text-shadow: 5px 5px 5px blue;
@@ -109,12 +108,6 @@
 
     img {
       animation: wfepdeodfpewkopfeofakdsjaia .1s infinite;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
     }
   </style>
 </head>
