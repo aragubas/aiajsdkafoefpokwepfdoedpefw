@@ -152,24 +152,31 @@
     <p>2022 - Aragubas</p>
   </footer>
   
-  <audio id="audio1" src="aiajsdkafoefpokwepfdoedpefw_music.mp3" loop></audio>
-<audio id="audio2" src="aiajsdkafoefpokwepfdoedpefw_text.mp3" loop></audio>
-  
-  <script>
-  var audio1 = document.getElementById('audio1');
-  var audio2 = document.getElementById('audio2');
+<audio id="player" preload="auto" loop>
+  <source src="aiajsdkafoefpokwepfdoedpefw_music.mp3" type="audio/mp3">
+</audio>
+<audio id="player2" preload="auto" loop>
+  <source src="aiajsdkafoefpokwepfdoedpefw_text.mp3" type="audio/mp3">
+</audio>
 
-  audio1.addEventListener('ended', function() {
-    setTimeout(function() {
-      audio2.currentTime = 3; // Atraso de 3 segundos
-      audio2.play();
-    }, 3000); // Atraso em milissegundos
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'a' || event.key === 'A') {
+      var player = document.getElementById('player');
+      player.play();
+    }
   });
-
-  audio1.play();
+  
+    document.addEventListener('keydown', function(event) {
+    if (event.key === 'a' || event.key === 'A') {
+      var player = document.getElementById('player2');
+      player2.play();
+    }
+  });
+  
+  player.volume = 0.3;
 </script>
 
-  
 </body>
 
 </html>
