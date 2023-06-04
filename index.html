@@ -151,6 +151,25 @@
   <footer>
     <p>2022 - Aragubas</p>
   </footer>
+  
+  <audio id="audio1" src="caminho/do/arquivo1.mp3" loop></audio>
+<audio id="audio2" src="caminho/do/arquivo2.mp3" loop></audio>
+  
+  <script>
+  var audio1 = document.getElementById('audio1');
+  var audio2 = document.getElementById('audio2');
+
+  audio1.addEventListener('ended', function() {
+    setTimeout(function() {
+      audio2.currentTime = 3; // Atraso de 3 segundos
+      audio2.play();
+    }, 3000); // Atraso em milissegundos
+  });
+
+  audio1.play();
+</script>
+
+  
 </body>
 
 </html>
